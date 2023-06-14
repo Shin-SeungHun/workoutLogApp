@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/exerciseListToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/exercise_toolbar">
+
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_fragmentId"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="아이디 찾기" />
+
+        <Button
+            android:id="@+id/btn_fragmentPw"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="비밀번호 찾기" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

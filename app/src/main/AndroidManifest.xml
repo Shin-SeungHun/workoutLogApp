@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:windowSoftInputMode="adjustNothing">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Muscle Memo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.workoutLog"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustResize"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ActivityPwSearch"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".ActivityIdSearch"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".RecyclerViewExercise"
+            android:exported="false"
+            android:parentActivityName=".WorkoutMainActivity" />
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Advertisement"
+            android:exported="false" />
+        <activity
+            android:name=".Video5"
+            android:exported="false" />
+        <activity
+            android:name=".Video4"
+            android:exported="false" />
+        <activity
+            android:name=".Video3"
+            android:exported="false" />
+        <activity
+            android:name=".Video2"
+            android:exported="false" />
+        <activity
+            android:name=".Video1"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyDialogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MemoAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewMemo"
+            android:exported="false"
+            android:parentActivityName=".WorkoutMainActivity" />
+        <activity
+            android:name=".DelActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MypageActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FragmentLayout"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".MyPageActivity_"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".WorkoutLogActivity"
+            android:exported="false"
+            android:parentActivityName=".RecyclerViewExercise" />
+        <activity
+            android:name=".WorkoutMainActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoinActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecyclerViewUser"
+            android:parentActivityName=".LoginActivity" />
+
+    </application>
+
+</manifest>

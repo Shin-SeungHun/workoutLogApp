@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_item"
+                android:layout_width="170dp"
+                android:layout_height="125dp"
+                android:background="@color/black"
+                android:icon="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_toEndOf="@id/img_item"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tv_item_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="item title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvToday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
